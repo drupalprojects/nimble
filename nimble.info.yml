@@ -15,3 +15,9 @@ dependencies:
   - toolbar
   - field_ui
   - ckeditor
+  - datetime
+  - entity_reference
+  - image
+  - link
+  - options
+  - telephone
