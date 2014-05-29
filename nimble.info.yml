@@ -13,3 +13,4 @@ dependencies:
   - hal
   - views
   - toolbar
+  - field_ui
