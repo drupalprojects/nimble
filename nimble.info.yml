@@ -11,3 +11,5 @@ dependencies:
   - rest
   - basic_auth
   - hal
+  - views
+  - toolbar
