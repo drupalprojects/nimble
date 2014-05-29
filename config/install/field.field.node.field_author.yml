@@ -1,0 +1,17 @@
+id: node.field_author
+name: field_author
+entity_type: node
+type: entity_reference
+module: entity_reference
+settings:
+  target_type: node
+locked: false
+cardinality: 1
+translatable: false
+status: true
+langcode: und
+indexes: {  }
+dependencies:
+  module:
+    - node
+    - entity_reference

@@ -1,0 +1,23 @@
+id: node.page.field_author
+entity_type: node
+bundle: page
+field_name: field_author
+label: Author
+description: ''
+required: false
+default_value: {  }
+default_value_function: ''
+settings:
+  handler: default
+  handler_settings:
+    target_bundles:
+      author: author
+    sort:
+      field: title
+status: true
+langcode: und
+field_type: entity_reference
+dependencies:
+  entity:
+    - field.field.node.field_author
+    - node.type.page
