@@ -14,3 +14,4 @@ dependencies:
   - views
   - toolbar
   - field_ui
+  - ckeditor
