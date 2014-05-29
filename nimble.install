@@ -3,3 +3,22 @@
  * @file
  * Install, update and uninstall functions for the nimble installation profile.
  */
+
+/**
+ * Implements hook_install().
+ *
+ * Performs actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function nimble_install() {
+
+  // Enable seven theme
+  \Drupal::config('core.extension')->set('theme', array('stark' => 0, 'seven' => 0))->save();
+
+  // Set seven as default admin theme
+  \Drupal::config('system.theme')->set('admin', 'seven')->save();
+
+  // Use admin theme when editing nodes
+  \Drupal::config('node.settings')->set('use_admin_theme', '1')->save();
+}
