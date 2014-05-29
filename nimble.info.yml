@@ -21,3 +21,6 @@ dependencies:
   - link
   - options
   - telephone
+themes:
+  - bartik
+  - seven
