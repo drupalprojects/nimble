@@ -1,0 +1,5 @@
+name = nimble
+description = nimble site install profile
+core = 8.x
+dependencies[] = block
+
