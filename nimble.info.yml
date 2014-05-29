@@ -1,0 +1,9 @@
+name: Nimble
+type: profile
+description: 'A structured content server'
+version: VERSION
+core: 8.x
+dependencies:
+  - node
+  - block
+  - dblog
