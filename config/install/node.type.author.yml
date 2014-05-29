@@ -1,0 +1,17 @@
+type: author
+name: 'Author'
+description: 'An author content type'
+help: ''
+has_title: true
+title_label: Name
+settings:
+  node:
+    preview: 1
+    options:
+      status: true
+      promote: false
+      sticky: false
+      revision: false
+    submitted: false
+status: true
+langcode: en
