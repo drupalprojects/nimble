@@ -4,6 +4,8 @@
  * Install, update and uninstall functions for the nimble installation profile.
  */
 
+use Drupal\menu_link\Entity;
+
 /**
  * Implements hook_install().
  *
@@ -11,4 +13,25 @@
  *
  * @see system_install()
  */
-function nimble_install() {}
+function nimble_install() {
+
+  $menu_links = array(
+    array('link_path' => '<front>', 'link_title' => 'Dashboard'),
+    array('link_path' => 'admin/content', 'link_title' => 'Content'),
+    array('link_path' => 'admin/structure/types', 'link_title' => 'Types'),
+    array('link_path' => 'admin/structure/taxonomy', 'link_title' => 'Taxonomy')
+  );
+
+  foreach($menu_links as $weight => $link) {
+    $link['menu_name'] = 'main';
+    $link['weight'] = $weight;
+    $link['module'] = 'nimble';
+    $link['attributes'] = array(
+      'title' => $link['link_title']
+    );
+
+    $entity = entity_create('menu_link', $link);
+    $entity->save();
+  }
+
+}
