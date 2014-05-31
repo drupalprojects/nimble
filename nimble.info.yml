@@ -22,5 +22,4 @@ dependencies:
   - options
   - telephone
 themes:
-  - bartik
-  - seven
+  - hemingway
