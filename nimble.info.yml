@@ -20,5 +20,6 @@ dependencies:
   - link
   - options
   - telephone
+  - taxonomy
 themes:
   - hemingway
